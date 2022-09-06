@@ -38,7 +38,7 @@ it('Checkbox disables button on click an enables on a second click', () => {
   const colorButton = screen.getAllByRole('button', {name: 'Change to MidnightBlue'});
 
   fireEvent.click(checkbox);
-  expect(colorButton).toBeEnabled();
+  expect(colorButton).toBeDisabled();
 
   fireEvent.click(checkbox);
   expect(colorButton).toBeEnabled();
